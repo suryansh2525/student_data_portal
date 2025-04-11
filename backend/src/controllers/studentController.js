@@ -1,9 +1,6 @@
 const axios = require('axios');
 const Student = require('../models/Student');
 
-// @desc    Fetch students from external API and save to database
-// @route   GET /api/students/sync
-// @access  Private
 const syncStudents = async (req, res) => {
   try {
     // Fetch students from the provided API
@@ -62,9 +59,6 @@ const getStudents = async (req, res) => {
   }
 };
 
-// @desc    Get student stats
-// @route   GET /api/students/stats
-// @access  Private
 const getStudentStats = async (req, res) => {
   try {
     // Count active vs inactive students
